@@ -1,0 +1,9 @@
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\bin\BankData.dll.config
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\bin\BankData.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\bin\BankData.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\obj\Debug\BankData.csprojResolveAssemblyReference.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\obj\Debug\BankData.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\obj\Debug\BankData.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\BankData\obj\Debug\BankData.pdb

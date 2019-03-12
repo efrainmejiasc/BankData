@@ -1,0 +1,57 @@
+@media (min-width:481px) and (max-width:800px){
+    .hierarchical-box .row [class*=col-lg]>.interal-box{
+        margin-left:0;
+        margin-right:0
+    }
+    img.img-inmobiliaria{
+        padding-left:15px
+    }
+    #form-client-access-2 a,.form-client-access a{
+        padding:3px 0;
+        margin:2px 0
+    }
+}
+@media only screen and (min-width:481px){
+    section.popup-root.show-popup .popup-box{
+        -webkit-transform:translate(-50%,0%);
+        -moz-transform:translate(-50%,0%);
+        -ms-transform:translate(-50%,0%);
+        -o-transform:translate(-50%,0%);
+        transform:translate(-50%,0%)
+    }
+    section.popup-root .popup-box{
+        top:30px;
+        left:50%;
+        -webkit-transform:translate(-50%,50vw);
+        -moz-transform:translate(-50%,50vw);
+        -ms-transform:translate(-50%,50vw);
+        -o-transform:translate(-50%,50vw);
+        transform:translate(-50%,50vw)
+    }
+    section.popup-root.resize-popup .popup-box{
+        height:auto!important;
+        margin-bottom:80px
+    }
+}
+@media only screen and (min-width:481px) and (max-width:799px){
+    section.popup-root.resize-popup .popup-box{
+        height:auto!important;
+        width:90%;
+        margin:0 5% 0 0
+    }
+}
+@media (min-width:481px) and (max-width:800px){
+    .title-mw{
+        padding-left:0;
+        margin-left:-10px;
+        margin-right:10px;
+        width:15%;
+        font-size:1.2em;
+        line-height:17px
+    }
+}
+@media only screen and (min-width:481px){
+    .hide-above-mobile{
+        display:none!important
+    }
+}

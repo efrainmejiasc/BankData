@@ -1,0 +1,798 @@
+/***********/
+/* helpers */
+/***********/
+.br{ border: 1px solid red; }
+.bb{ border: 1px solid blue; }
+.bg{ border: 1px solid green; }
+.is-hidden{ display: none !important; opacity: 0;}
+.is-visible{ display: block !important; opacity: 1; }
+.grid-x{ display: -ms-flexbox; display: flex; -ms-flex-flow: row wrap; flex-flow: row wrap; } 
+@media screen and (max-width: 800px){
+    .show-for-desktop{
+        display: none !important;
+    }
+}
+
+.form  .header-btn.opened{
+    background: #fff;
+    filter: none;
+    color: #434a58;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #d5e2ee;
+    border-bottom: none;
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+    z-index: 3;
+    padding-bottom: 0;
+    height: 28px;
+}
+
+@media(min-width: 800px){
+    .form .input-for-search{
+        display:none;
+    }
+}
+
+/*************/
+/* main-form */
+/*************/
+
+.main-form{
+    position: absolute;
+    right: 0;
+    left: -74px !important;
+    top: 31px;
+    z-index: 99999;
+    min-width: 235px;
+    width: auto;
+    padding: 5px;
+    border-radius: 4px 0 4px 4px;
+    border: 1px solid #d5e2ee;
+    background-color: #fff;
+}
+
+.main-form > .form-section{
+    font: 12px Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* main form -> document-type */
+.main-form > .form-section.document-type > select{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: .583em .755em .5em .755em;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e6;
+    border-radius: 2px;
+    background-color: buttonface;
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    color: #434a58;
+    font: 12px Arial, sans-serif;
+}
+
+/* main form -> document-number */
+.main-form > .form-section.document-number > input[type="text"]{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: .583em .755em .5em .755em;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e6;
+    border-radius: 2px;
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    color: #434a58;
+    font: 12px Arial, sans-serif;
+}
+
+/* main form -> remember-document */
+.main-form > .form-section.remember-document{
+    padding: 0;
+    width: 94%;
+    
+}
+    .main-form > .form-section.remember-document > input[type="checkbox"]{
+        position: static;
+        margin: 3px 3px 3px 4px;
+        transform: translateY(-2px);
+    }
+    .main-form > .form-section.remember-document > label{
+        display: inline-block;
+        font-size: 12px;
+        color: #434a58;
+    }
+    .main-form > .form-section.remember-document > .img{
+        transform: translateY(-5px);
+    }
+
+/* main form -> password */
+.main-form > .form-section.password{
+    position: relative;
+}
+    .main-form > .form-section.password > .icon-show-pass{
+        position: absolute;
+        padding: 10px;
+        right: 6px;
+        bottom: 4px;
+        background-image: url(../images/ojo-gris-f.png);
+        background-repeat: no-repeat;
+        background-size: 58%;
+    }
+    .main-form > .form-section.password > input[type="password"]{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: .583em .755em .5em .755em;
+        box-sizing: border-box;
+        border: 1px solid #e8e8e6;
+        border-radius: 2px;
+        box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+        font: 12px Arial, sans-serif;
+        color: #434a58;
+    }
+
+/* main form -> button-enter  */
+.main-form > .form-section.button-enter > .btn-enter{
+    box-sizing: border-box;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #00559d;
+    color: #FFF;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+    border-radius: 4px;
+    padding: 3px 15px;
+    font-size: 14px;
+    line-height: 32px;
+}
+    .main-form > .form-section.button-enter > .btn-enter:hover{
+        background: linear-gradient(to bottom,#0069b1 0,#004b8c 100%);
+        border: 1px solid #003c6f;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+    }
+
+/* main form -> recover-password */
+.main-form > .form-section.recover-password > .recover-pass-link{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #0065b7;
+}
+
+/* main form -> register */
+.main-form > .form-section.register > .register-btn{
+    display: block;
+    box-sizing: border-box;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #00559d;
+    color: #FFF;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#59C000 0,#499900 100%);
+    border: 1px solid #499900;
+    border-radius: 4px;
+    padding: 3px 15px;
+    font-size: 14px;
+    line-height: 32px;
+}
+    .main-form > .form-section.register > .register-btn:hover{
+        background: linear-gradient(to bottom,#489D01 0,#347201 100%);
+        border: 1px solid #245C28;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+    }
+
+/******************/
+/* register-modal */
+/******************/
+
+.register-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 99999;
+    background-color: rgba(0,0,0,.5);
+    transition: opacity .5s;
+    box-sizing: border-box;
+}
+    .register-modal > .modal-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform .5s;
+        padding: 17px;
+        box-sizing: inherit;
+    }
+
+    @media screen and (min-width: 800px){
+        .register-modal > .modal-box{
+            width: calc(800px + 40px);
+            min-width: calc(800px + 40px);
+            /* height: calc(530px + 40px);
+            min-height: calc(530px + 40px); */
+            height: auto;
+            border-radius: 6px;
+            padding: 34px;
+        }
+    }
+    
+        .register-modal > .modal-box > .register-modal-content{
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #c4d7e5;
+            padding: 16px;
+            overflow: auto;
+        }   
+            @media screen and (min-width: 800px){
+                .register-modal > .modal-box > .register-modal-content{
+                    overflow: hidden;
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+            .register-modal > .modal-box > .register-modal-content > .title{
+                margin: 0;
+                font-size: 25px;
+            }
+            .register-modal > .modal-box > .register-modal-content > .wizard{
+                margin: 16px 0 0 0;
+                padding: 0;
+                border: 1px solid #dcdcdc;
+                border-radius: 3px;
+                box-shadow: #FFF 0 0 0 3px inset;
+                background: linear-gradient(white,#f5f7f8);
+                position: relative;
+                width: 100%;
+                height: 70px;
+            }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line{
+                    position: absolute;
+                    top: 32px;
+                    width: calc(100% - 40px);
+                    height: 9px;
+                    margin: 0 20px;
+                    background: #d0dbe6;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background{
+                    position: absolute;
+                    width:16px;
+                    height:16px;
+                    top:-4px;
+                    background: #d0dbe6;
+                    border-radius: 15px;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background > .point{
+                    position: absolute;
+                    top:4px;
+                    left:4px;
+                    width:8px;
+                    height:8px;
+                    background: #a6bfd6;
+                    border-radius: 50%;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background > .text{
+                    position: relative;
+                    top: -20px;
+                    display: inline-block;
+                    *display: inline;
+                    zoom: 1;
+                    white-space: nowrap;
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #666;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background.active .point{
+                    top:4px;
+                    left:4px;
+                    width:8px;
+                    height:8px;
+                    background: #44a718;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background.active .text{
+                    color: #44a718;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background.now{
+                    width:18px;
+                    height:18px;
+                }
+                .register-modal > .modal-box > .register-modal-content > .wizard > .progress-bar > .progress-line > .point-background.now .point{
+                    width:10px;
+                    height:10px;
+                    top:4px;
+                    left:4px;
+                }
+        
+        .register-modal > .modal-box > .register-modal-content > .step-content{
+            border-bottom: 1px solid #dde3ea;
+        }
+            .register-modal > .modal-box > .register-modal-content > .step-content > .container{
+                width: 100%;
+                padding-left: 0;
+            }
+            @media screen and (min-width: 800px){
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container{
+                    width: 85%;
+                    padding-bottom: 85px;
+                }
+            }
+            .register-modal > .modal-box > .register-modal-content > .step-content > .container > .title{
+                font-family: "BBVA Web Book";
+                font-size: 16px;
+                color: #0078d2;
+                font-weight: normal;
+            }
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container [class^="column-"]{
+                    box-sizing: border-box;
+                    flex: 0 0 100%;
+                }
+                @media(min-width: 800px){
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-alfa{
+                        border-right: 1px solid #ccc;
+                    }
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container [class^="column-"]{
+                        flex: 0 0 50%;
+                        padding: 30px 15px;
+                    }
+                }
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container [class^="column-"] > .form-section{
+                    margin-bottom: 15px;
+                    height: 52px;
+                }
+                /* column-alfa */
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-alfa > .form-section > label{
+                    position: relative;
+                    padding: 0 0 3px;
+                    display: block;
+                    text-align: left;
+                }
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-alfa > .form-section > label > .icon-info{
+                    background-image: url(../images/icono_info_16x16.png);
+                    background-position: 0 0;
+                    height: 16px;
+                    width: 16px;
+                    position: relative;
+                    top: 0;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                /* column-beta */
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta{
+                    padding-top: 0;
+                }
+                .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha {
+                    box-shadow: 0 1px 2px #c3c0b4;
+                    display: inline-block;
+                    zoom: 1;
+                    border-radius: 5px;
+                    background: #f5f7f8;
+                    padding: 10px;
+                    width: 200px;
+                    height: 79px;
+                    position: relative;
+                    margin-bottom: 38px;
+                }
+                    @media screen and (min-width: 800px){
+                        .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha{
+                            width: 242px;
+                        }
+                    }
+                
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .image{
+                        border-radius: 5px;
+                        background: #fff;
+                        display: block;
+                        width: 155px;
+                        padding: 3px;
+                        border: 1px solid #ededed;
+                        float: left;
+                    }
+                        @media screen and (min-width: 800px){
+                            .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .image{
+                                width: 185px;
+                            }
+                        }
+                    
+                        .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .image > img{
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .help{
+                        display: inline-block;
+                        margin-left: 13px;
+                    }
+                        .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .help > img{
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .update-captcha-button{
+                        padding: 0;
+                        width: 26px;
+                        margin: 10px 0 0 10px;
+                        background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+                        border: 1px solid #00559d;
+                        border-radius: 2px;
+                        color: #FFF;
+                        cursor: pointer;
+                        text-align: center;
+                        vertical-align: middle;
+                        text-shadow: none;
+                        font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+                        position: relative;
+                    }
+                        .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captcha > .update-captcha-button > .icon{
+                            background-image: url(../images/sprite-white-x16.png);
+                            background-position: -330px -264px;
+                        }
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captchaCodeLabel{
+                        padding: 0 0 3px;
+                        margin-top: 55px;
+                        display: block;
+                        position: relative;
+                        text-align: left;
+                    }
+                    .register-modal > .modal-box > .register-modal-content > .step-content > .container .column-beta .captchaCode{
+                        width: 140px;
+                    }
+
+            .register-modal > .modal-box > .register-modal-content > .next-button-container{
+                text-align: right;
+                margin-top: 15px
+            }      
+                .register-modal > .modal-box > .register-modal-content > .next-button-container > .next-button{
+                    background: #0079c1;
+                    background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+                    border-radius: 2px;
+                    padding: 2px 9px 2px 8px;
+                    border: 1px solid #00559d;
+                    color: #FFF;
+                    cursor: pointer;
+                    text-align: center;
+                    vertical-align: middle;
+                    text-shadow: none;
+                    font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+                    position: relative;
+                 }      
+                .register-modal > .modal-box > .register-modal-content > .next-button-container > .next-button.arrow-right::after{ 
+                    content: "";
+                    background-image: url("../images/buttons-arrow.png");
+                    background-repeat: no-repeat;
+                    background-position: 0 -31px;
+                    width: 10px;
+                    height: 30px;
+                    position: absolute;
+                    top: -1px;
+                    right: -10px;
+                }      
+
+
+        .register-modal > .modal-box > .close-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+            border-bottom-left-radius: 6px;
+            transition: .4s;
+        }
+            .register-modal > .modal-box > .close-button > i{
+                    color: gray;
+                    font-size: 18px;
+            }
+
+
+/******************/
+/* recover-modal */
+/*****************/
+.recover-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 99999;
+    background-color: rgba(0,0,0,.5);
+    transition: opacity .5s;
+    box-sizing: border-box;
+}
+    .recover-modal > .modal-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform .5s;
+        padding: 17px;
+        box-sizing: inherit;
+    }
+
+    @media screen and (min-width: 800px){
+        .recover-modal > .modal-box{
+            width: calc(800px + 40px);
+            min-width: calc(800px + 40px);
+            /* height: calc(530px + 40px);
+            min-height: calc(530px + 40px); */
+            height: auto;
+            border-radius: 6px;
+            padding: 34px;
+        }
+    }
+    
+        .recover-modal > .modal-box > .recover-modal-content{
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #c4d7e5;
+            padding: 16px;
+            overflow: auto;
+        }   
+            @media screen and (min-width: 800px){
+                .recover-modal > .modal-box > .recover-modal-content{
+                    overflow: hidden;
+                    border-radius: 0 0 5px 5px;
+                }
+            }
+            .recover-modal > .modal-box > .recover-modal-content > .title{
+                margin: 0;
+                font-size: 25px;
+            }
+            .recover-modal > .modal-box > .recover-modal-content > .wizard{
+                margin: 16px 0 0 0;
+                padding: 0;
+                border: 1px solid #dcdcdc;
+                border-radius: 3px;
+                box-shadow: #FFF 0 0 0 3px inset;
+                background: linear-gradient(white,#f5f7f8);
+                position: relative;
+                width: 100%;
+                height: 70px;
+            }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line{
+                    position: absolute;
+                    top: 32px;
+                    width: calc(100% - 40px);
+                    height: 9px;
+                    margin: 0 20px;
+                    background: #d0dbe6;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background{
+                    position: absolute;
+                    width:16px;
+                    height:16px;
+                    top:-4px;
+                    background: #d0dbe6;
+                    border-radius: 15px;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background > .point{
+                    position: absolute;
+                    top:4px;
+                    left:4px;
+                    width:8px;
+                    height:8px;
+                    background: #a6bfd6;
+                    border-radius: 50%;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background > .text{
+                    position: relative;
+                    top: -20px;
+                    display: inline-block;
+                    *display: inline;
+                    zoom: 1;
+                    white-space: nowrap;
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #666;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background.active .point{
+                    top:4px;
+                    left:4px;
+                    width:8px;
+                    height:8px;
+                    background: #44a718;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background.active .text{
+                    color: #44a718;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background.now{
+                    width:18px;
+                    height:18px;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .wizard > .progress-bar > .progress-line > .point-background.now .point{
+                    width:10px;
+                    height:10px;
+                    top:4px;
+                    left:4px;
+                }
+        
+        .recover-modal > .modal-box > .recover-modal-content > .step-content{
+            border-bottom: 1px solid #dde3ea;
+        }
+            .recover-modal > .modal-box > .recover-modal-content > .step-content > .container{
+                width: 100%;
+                padding-left: 0;
+            }
+            @media screen and (min-width: 800px){
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container{
+                    width: 85%;
+                    padding-bottom: 85px;
+                }
+            }
+            .recover-modal > .modal-box > .recover-modal-content > .step-content > .container > .title{
+                font-family: "BBVA Web Book";
+                font-size: 16px;
+                color: #0078d2;
+                font-weight: normal;
+            }
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container [class^="column-"]{
+                    box-sizing: border-box;
+                    flex: 0 0 100%;
+                }
+                @media(min-width: 800px){
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-alfa{
+                        border-right: 1px solid #ccc;
+                    }
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container [class^="column-"]{
+                        flex: 0 0 50%;
+                        padding: 30px 15px;
+                    }
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container [class^="column-"] > .form-section{
+                    margin-bottom: 15px;
+                    height: 52px;
+                }
+                /* column-alfa */
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-alfa > .form-section > label{
+                    position: relative;
+                    padding: 0 0 3px;
+                    display: block;
+                    text-align: left;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-alfa > .form-section > label > .icon-info{
+                    background-image: url(../images/icono_info_16x16.png);
+                    background-position: 0 0;
+                    height: 16px;
+                    width: 16px;
+                    position: relative;
+                    top: 0;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                /* column-beta */
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta{
+                    padding-top: 0;
+                }
+                .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha {
+                    box-shadow: 0 1px 2px #c3c0b4;
+                    display: inline-block;
+                    zoom: 1;
+                    border-radius: 5px;
+                    background: #f5f7f8;
+                    padding: 10px;
+                    width: 200px;
+                    height: 79px;
+                    position: relative;
+                    margin-bottom: 38px;
+                }
+                    @media screen and (min-width: 800px){
+                        .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha{
+                            width: 242px;
+                        }
+                    }
+                
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .image{
+                        border-radius: 5px;
+                        background: #fff;
+                        display: block;
+                        width: 155px;
+                        padding: 3px;
+                        border: 1px solid #ededed;
+                        float: left;
+                    }
+                        @media screen and (min-width: 800px){
+                            .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .image{
+                                width: 185px;
+                            }
+                        }
+                    
+                        .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .image > img{
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .help{
+                        display: inline-block;
+                        margin-left: 13px;
+                    }
+                        .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .help > img{
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .update-captcha-button{
+                        padding: 0;
+                        width: 26px;
+                        margin: 10px 0 0 10px;
+                        background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+                        border: 1px solid #00559d;
+                        border-radius: 2px;
+                        color: #FFF;
+                        cursor: pointer;
+                        text-align: center;
+                        vertical-align: middle;
+                        text-shadow: none;
+                        font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+                        position: relative;
+                    }
+                        .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captcha > .update-captcha-button > .icon{
+                            background-image: url(../images/sprite-white-x16.png);
+                            background-position: -330px -264px;
+                        }
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captchaCodeLabel{
+                        padding: 0 0 3px;
+                        margin-top: 55px;
+                        display: block;
+                        position: relative;
+                        text-align: left;
+                    }
+                    .recover-modal > .modal-box > .recover-modal-content > .step-content > .container .column-beta .captchaCode{
+                        width: 140px;
+                    }
+
+            .recover-modal > .modal-box > .recover-modal-content > .next-button-container{
+                text-align: right;
+                margin-top: 15px
+            }      
+                .recover-modal > .modal-box > .recover-modal-content > .next-button-container > .next-button{
+                    background: #0079c1;
+                    background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+                    border-radius: 2px;
+                    padding: 2px 9px 2px 8px;
+                    border: 1px solid #00559d;
+                    color: #FFF;
+                    cursor: pointer;
+                    text-align: center;
+                    vertical-align: middle;
+                    text-shadow: none;
+                    font: 12px/24px "BBVA Web Medium",arial,sans-serif;
+                    position: relative;
+                 }      
+                .recover-modal > .modal-box > .recover-modal-content > .next-button-container > .next-button.arrow-right::after{ 
+                    content: "";
+                    background-image: url("../images/buttons-arrow.png");
+                    background-repeat: no-repeat;
+                    background-position: 0 -31px;
+                    width: 10px;
+                    height: 30px;
+                    position: absolute;
+                    top: -1px;
+                    right: -10px;
+                }      
+
+
+        .recover-modal > .modal-box > .close-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+            border-bottom-left-radius: 6px;
+            transition: .4s;
+        }
+            .recover-modal > .modal-box > .close-button > i{
+                    color: gray;
+                    font-size: 18px;
+            }

@@ -1,0 +1,6 @@
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\bin\Debug\EngineCodeBank.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\bin\Debug\EngineCodeBank.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\obj\Debug\EngineCodeBank.csprojResolveAssemblyReference.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\obj\Debug\EngineCodeBank.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\obj\Debug\EngineCodeBank.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\EngineCodeBank\obj\Debug\EngineCodeBank.pdb

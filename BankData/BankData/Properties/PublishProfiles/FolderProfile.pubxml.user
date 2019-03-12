@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\BankData\BankData\PublishBankData</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BankData.dll">
+      <publishTime>06/26/2018 16:01:04</publishTime>
+    </File>
+    <File Include="bin/BankData.pdb">
+      <publishTime>06/26/2018 16:01:04</publishTime>
+    </File>
+    <File Include="bin/EngineCodeBank.dll">
+      <publishTime>06/25/2018 19:27:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/15/2017 13:12:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="css/fonts/bbva-book/bbvaweb-book-woff.woff">
+      <publishTime>04/06/2018 11:40:29</publishTime>
+    </File>
+    <File Include="css/fonts/bbva-icons.ttf">
+      <publishTime>04/06/2018 11:39:12</publishTime>
+    </File>
+    <File Include="css/fonts/bbva-light/bbvaweb-light-woff.woff">
+      <publishTime>04/06/2018 11:41:16</publishTime>
+    </File>
+    <File Include="css/fonts/bbva-medium/bbvaweb-medium-woff.woff">
+      <publishTime>04/06/2018 11:41:55</publishTime>
+    </File>
+    <File Include="css/generalBase-desktop.css">
+      <publishTime>04/06/2018 11:37:57</publishTime>
+    </File>
+    <File Include="css/generalBase-mobile.css">
+      <publishTime>04/06/2018 11:37:57</publishTime>
+    </File>
+    <File Include="css/generalBase-tablet.css">
+      <publishTime>04/06/2018 11:37:57</publishTime>
+    </File>
+    <File Include="css/images/ui-bg_flat_100_ffffff_40x100.png">
+      <publishTime>04/06/2018 11:42:59</publishTime>
+    </File>
+    <File Include="css/img/arrows-slider.svg">
+      <publishTime>04/06/2018 11:43:21</publishTime>
+    </File>
+    <File Include="css/img/separador-menu.png">
+      <publishTime>04/06/2018 11:43:21</publishTime>
+    </File>
+    <File Include="css/img/sprite_01.png">
+      <publishTime>04/06/2018 11:43:21</publishTime>
+    </File>
+    <File Include="css/libraries.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="css/main-desktop.min.ver27.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="css/main-mobile.min.ver40.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="css/main-tablet.min.ver28.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="css/vendor.min.ver18.css">
+      <publishTime>04/06/2018 11:37:58</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>04/12/2018 17:31:30</publishTime>
+    </File>
+    <File Include="error.aspx">
+      <publishTime>04/12/2018 12:47:51</publishTime>
+    </File>
+    <File Include="error.html">
+      <publishTime>06/25/2018 18:22:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/29/2018 19:43:21</publishTime>
+    </File>
+    <File Include="images/adelanto-de-sueldo-enlace_tcm1105-580036.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/adelanto-de-sueldo-secundario_tcm1105-595714.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/apertura-de-cuentas-home_tcm1105-658307.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/bbva-continental-icono-chat-24_tcm1105-446061.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/buttons-arrow.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/captchas/1.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/10.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/2.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/3.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/4.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/5.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/6.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/7.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/8.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/captchas/9.jpeg">
+      <publishTime>04/12/2018 15:28:08</publishTime>
+    </File>
+    <File Include="images/credito-hipotecario-landing-ancho-completo_tcm1105-580017.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/credito-hipotecario-landing_tcm1105-658481.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/cuenta-ganadora-icono-home_tcm1105-687272.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/ecommerce-awards_tcm1105-638689.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/fondos-mutuos-ancho-completo_tcm1105-631679.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/ico-ayuda-captcha.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/icono_info_16x16.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/imgayuda_u5.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/kv-digitalizacion_tcm1105-702143.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/libro-reclamaciones-virtual_tcm1105-638710.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/logoperu_tcm1105-418187.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/logo_tcm1105-421006.jpg">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/nuestros-canales-bbva_tcm1105-642050.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/nuevas-funcionalidades-icono_tcm1105-702173.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/ojo-gris-f.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/prestamo-al-toque-ancho-completo_tcm1105-607986.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/prestamos-landing_tcm1105-658289.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/seguro-vehicular-ancho-completo_tcm1105-610207.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/seguro-vehicular-bbva-movil_tcm1105-618833.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/seguro-vehicular-landing_tcm1105-658487.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/sprite-white-x16.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/tarjeta-del-hincha-ancho-completo_tcm1105-696232.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/tarjeta-del-hincha-secundario_tcm1105-718314.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/tarjetas-devolucion-en-primera-compra-ancho-completo_tcm1105-694786.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="images/tarjetas-landing_tcm1105-658295.png">
+      <publishTime>04/06/2018 11:45:46</publishTime>
+    </File>
+    <File Include="js/autocompletar.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/commonJS.min.ver21.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/constantes_tridion.ver4.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/dataLayer.ver3.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/funciones_dataLayer.ver12.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/handlebars-v1.3.0.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/headerFooter.min.ver4.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/iframe-order-receiver.min.ver2.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/iframeResizer.contentWindow.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/iframeResizer.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/libraries.min.ver19.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/main-v3.min.ver39.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>04/12/2018 17:03:46</publishTime>
+    </File>
+    <File Include="js/masonry.pkgd.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/modernizr-v2.min.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/platform.js">
+      <publishTime>04/12/2018 17:01:59</publishTime>
+    </File>
+    <File Include="js/plusone.js">
+      <publishTime>04/12/2018 17:02:00</publishTime>
+    </File>
+    <File Include="js/smartbanner-init.ver4.js">
+      <publishTime>04/12/2018 17:02:00</publishTime>
+    </File>
+    <File Include="js/vendor.min.ver4.js">
+      <publishTime>04/12/2018 17:02:00</publishTime>
+    </File>
+    <File Include="js/yt-v1.min.ver1.js">
+      <publishTime>04/12/2018 17:02:00</publishTime>
+    </File>
+    <File Include="nodisponible.aspx">
+      <publishTime>04/12/2018 14:56:09</publishTime>
+    </File>
+    <File Include="nodisponible.html">
+      <publishTime>04/12/2018 17:06:48</publishTime>
+    </File>
+    <File Include="pe.aspx">
+      <publishTime>06/26/2018 09:21:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/29/2018 20:53:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
