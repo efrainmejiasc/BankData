@@ -1,0 +1,11 @@
+﻿.careAfm
+{
+    color:#02a736;
+    font-size:20px;
+
+}
+
+ul:hover,li:hover,a:hover {
+text-decoration: none;
+color:#3a3a3a;
+}

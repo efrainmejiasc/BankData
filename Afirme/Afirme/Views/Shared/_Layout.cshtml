@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] </title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/pages.css">
+
+</head>
+<body>
+    <header style="width:100%">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-12" style="border:none;">
+            <div class="container">
+                <ul class="navbar-nav flex-grow-1" style="float:left;">
+                    <li class="nav-item">
+                        <img src="~/images/logo.jpg" />
+                    </li>
+                </ul>
+
+                <a class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between float: right; font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border: none; " id="submenu" style="color: green; float: right;">
+            
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Personas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Patrimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Payme</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Empresas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Gobierno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Home")" class="dropdown-toggle careAfm" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logout_">&nbsp;&nbsp;&nbsp;Digital Hub</a>
+                            </li>
+
+                        </ul>
+                </div>
+                  <ul class="navbar-nav flex-grow-1" style="float:left;">
+                    <li class="nav-item">
+                        <img src="~/images/iconos.jpg" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3" >
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+
+        </div>
+    </footer>
+
+
+  <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script> 
+  <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
