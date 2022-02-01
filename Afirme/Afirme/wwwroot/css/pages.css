@@ -9,3 +9,7 @@ ul:hover,li:hover,a:hover {
 text-decoration: none;
 color:#3a3a3a;
 }
+
+.redondeo{
+    border-radius:10%;
+}
