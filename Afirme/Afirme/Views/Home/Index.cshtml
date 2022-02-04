@@ -4,8 +4,10 @@
     ViewData["Title"] = "Afirme, su inversion de hoy";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/Home/jsIndex.js"></script>
+<link rel="stylesheet" href="~/css/modalStyle.css">
 
 
 
@@ -53,20 +55,77 @@
           
        </div>
     
-<div class="container-fluid" style="background-color:white">
-    <br /><br />
-</div>
+     <div class="container-fluid" style="background-color:white">
+                    <br /><br />
+           </div>
 
        <div class="form-horizontal col-md-12 text-center" style="color:gray;font-family:calibri light;background-color:#F3F3F3;">
-           <br /><br />
+-moz-text-size-adjust    <br /><br />
            <h1>Contamos con una Tarjeta de Crédito diseñada especialmente <br /> para ti y tus necesidades</h1>
                       <br /><br />
           <img src="~/images/tarjetas.jpg"  id="baja" onclick="goToFunction();" />
        </div>
-      
+       <br /><br />
 
+       
+       <div class="form-horizontal col-md-12 text-center" style="color:#02a736;font-family:calibri light;background-color:#F3F3F3;">
+       <h1>¡Conócelas todas!</h1>
+       </div>
+
+       
+
+
+              <div class="modalTipo" id="loginModal" >
+                  <div class="modal-content2">
+
+                   <table>
+                       <tr>
+                          <td>
+                            <div class="row">
+                            <div class="col-md-4" ><label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
+                            <div class="col-md-4"><label style="font-size:16px;color:green;">  <input class="form-check-input" type="radio" id="rPersona"> Personas </label></div>
+                            <div class="col-md-4"><label style="font-size:16px;color:green;">  <input class="form-check-input" type="radio" id="rEmpresa"> Empresas </label></div>
+                            </div>
+                        </td>
+                     </tr>
+
+                    <tr>
+                       <td>
+                          <div class="row">
+                          <div class="col-md-4"> <label style="font-size:20px;color:green;">   AfirmeNet </label>  </div>
+                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label> </div>
+                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
+                          </div>
+                     </td>
+
+                    </tr>
+                             
+                    <tr>
+                        <td>
+                          <div class="row">
+                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
+                          <div class="col-md-4" style="background-color:#919292;color:white;width:auto;height:40px;" ><input type="text"  placeholder="USUARIO"  style="background-color:#919292;color:white;width:120px;border:0px;height:40px;" /></div>
+                          <div class="col-md-4" style="width:auto;height:15px;height:40px;" ><input type="submit" class="btn btn-success" value="Ingresar" style="width:120px;height:40px;" /></div>
+                          </div>
+                      </td>
+                   </tr>
+                             
+                        
+                </table>
+
+                    
+
+                     
+
+                   
+
+                  </div>
+              </div>
+       
+
+       </div>
     </div>
-</div>
+
 
 
 

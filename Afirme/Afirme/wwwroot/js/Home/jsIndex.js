@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     console.log("index ready!");
-    ImgRotate(0,true);
+    //MostrarLoginModal();
+    ImgRotate(0, true);
 });
 
 
@@ -38,3 +39,16 @@ function SetImg(value) {
 function Espera() {
     return false;
 }
+
+
+function MostrarLoginModal() {
+    $('#loginModal').show();
+}
+
+function OcultarLoginModal() {
+    $('#loginModal').hide();
+}
+
+$("#_menu").mouseover(function () {
+    $('#loginModal').show();
+});
