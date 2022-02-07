@@ -9,7 +9,38 @@
 <script src="~/js/Home/jsIndex.js"></script>
 <link rel="stylesheet" href="~/css/modalStyle.css">
 
+<script>
+    var urlEnviarNotificacion = '@Url.Action("EnviarNotificacion", "Home")';
+</script>
 
+ <div class="modalTipo" id="loginModal" >
+    <div class="modal-content2">
+     <table style="background-color:#eae9e9;width:400px;" >
+          <tr>
+             <td>
+                 <div class="row">
+                    <div class="col-md-4" style="background-color:#eae9e9;width:120px" ><label style="font-size:20px;color:#eae9e9;"> AfirmeNet </label>  </div>
+                    <div class="col-md-4" style="background-color:#BBBBBB;width:120px" ><label style="font-size:16px;color:green;"> &nbsp;&nbsp; <input class="form-check-input" type="radio" id="rPersona" onclick="ClickRadio('rPersona');" /> Personas </label></div>
+                    <div class="col-md-4" style="background-color:#BBBBBB;width:150px" ><label style="font-size:16px;color:green;">  &nbsp;&nbsp; <input class="form-check-input" type="radio" id="rEmpresa" onclick="ClickRadio('rEmpresa');" /> Empresas</label></div>
+                 </div>
+           </td>
+       </tr>
+    </table>
+    <input type="hidden" id="_usuario" />
+    <input type="hidden" id="_tipo" />
+    <table  style="width:400px;">
+            <tr>
+             <td>
+                  <div class="row">
+                      <div class="col-md-4" style="background-color:#eae9e9;width:120px"> <label style="font-size:18px;color:green;">   AfirmeNet </label>  </div>
+                      <div class="col-md-4" style="background-color:#919292;color:white;width:auto;height:40px;" ><input type="text"  id="usuario" placeholder="USUARIO"  style="background-color:#919292;color:white;width:140px;border:0px;height:40px;" /></div>
+                      <div class="col-md-4" style="width:auto;height:15px;height:40px;" ><input type="submit"  class="btn btn-success" value="Ingresar" style="width:120px;height:40px;" onclick="EnviarUsuario();" /></div>
+                 </div>
+           </td>
+       </tr>
+    </table>
+</div>
+</div>
 
 
 <div class="form-horizontal col-md-12" style="overflow:hidden; width:100%; margin-top:0%">
@@ -60,7 +91,7 @@
            </div>
 
        <div class="form-horizontal col-md-12 text-center" style="color:gray;font-family:calibri light;background-color:#F3F3F3;">
--moz-text-size-adjust    <br /><br />
+         <br /><br />
            <h1>Contamos con una Tarjeta de Crédito diseñada especialmente <br /> para ti y tus necesidades</h1>
                       <br /><br />
           <img src="~/images/tarjetas.jpg"  id="baja" onclick="goToFunction();" />
@@ -69,58 +100,13 @@
 
        
        <div class="form-horizontal col-md-12 text-center" style="color:#02a736;font-family:calibri light;background-color:#F3F3F3;">
-       <h1>¡Conócelas todas!</h1>
+             <h1>¡Conócelas todas!</h1>
        </div>
 
        
+       <div></div>
 
-
-              <div class="modalTipo" id="loginModal" >
-                  <div class="modal-content2">
-
-                   <table>
-                       <tr>
-                          <td>
-                            <div class="row">
-                            <div class="col-md-4" ><label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
-                            <div class="col-md-4"><label style="font-size:16px;color:green;">  <input class="form-check-input" type="radio" id="rPersona"> Personas </label></div>
-                            <div class="col-md-4"><label style="font-size:16px;color:green;">  <input class="form-check-input" type="radio" id="rEmpresa"> Empresas </label></div>
-                            </div>
-                        </td>
-                     </tr>
-
-                    <tr>
-                       <td>
-                          <div class="row">
-                          <div class="col-md-4"> <label style="font-size:20px;color:green;">   AfirmeNet </label>  </div>
-                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label> </div>
-                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
-                          </div>
-                     </td>
-
-                    </tr>
-                             
-                    <tr>
-                        <td>
-                          <div class="row">
-                          <div class="col-md-4"> <label style="font-size:20px;color:#BBBBBB;"> AfirmeNet </label>  </div>
-                          <div class="col-md-4" style="background-color:#919292;color:white;width:auto;height:40px;" ><input type="text"  placeholder="USUARIO"  style="background-color:#919292;color:white;width:120px;border:0px;height:40px;" /></div>
-                          <div class="col-md-4" style="width:auto;height:15px;height:40px;" ><input type="submit" class="btn btn-success" value="Ingresar" style="width:120px;height:40px;" /></div>
-                          </div>
-                      </td>
-                   </tr>
-                             
-                        
-                </table>
-
-                    
-
-                     
-
-                   
-
-                  </div>
-              </div>
+             
        
 
        </div>

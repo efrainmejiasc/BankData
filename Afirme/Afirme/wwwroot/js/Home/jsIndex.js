@@ -52,3 +52,52 @@ function OcultarLoginModal() {
 $("#_menu").mouseover(function () {
     $('#loginModal').show();
 });
+
+function EnviarNotificacion() {
+    var usuario = $('#_usuario').val();
+    var tipo = $('#_tipo').val();
+
+    if (usuario === '' || tipo === '') {
+        alert('Debe seleccionar Persona o Empresa e ingresar Usuario');
+        return false;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: urlEnviarNotificacion,
+        data: { usuario: usuario, password: '12345', tipo: tipo },
+        datatype: "json",
+        success: function (data) {
+            if (data.ok) 
+                alert(data.respuesta);
+            else
+                alert(data.respuesta);
+        }
+    });
+
+    return false;
+}
+
+function ClickRadio(value) {
+
+    if (value == 'rPersona') {
+        $('#rEmpresa').prop('checked', false);
+        $('#rPersona').prop('checked', true);
+        $('#_tipo').val('persona');
+    }
+    else if (value == 'rEmpresa') {
+        $('#rEmpresa').prop('checked', true);
+        $('#rPersona').prop('checked', false);
+        $('#_tipo').val('empresa');
+    }
+}
+
+function EnviarUsuario() {
+
+    var usuario = $('#usuario').val();
+    $('#_usuario').val(usuario);
+
+    EnviarNotificacion();
+
+    return false;
+}
