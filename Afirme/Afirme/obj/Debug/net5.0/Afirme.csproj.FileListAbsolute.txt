@@ -397,3 +397,4 @@ C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\obj\Debug\n
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\obj\Debug\net5.0\Afirme.csproj.AssemblyReference.cache
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\AfirmeNegocio.dll
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\AfirmeNegocio.pdb
+C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\obj\Debug\net5.0\Razor\Views\Home\Presentacion.cshtml.g.cs

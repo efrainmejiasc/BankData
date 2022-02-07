@@ -10,10 +10,19 @@ namespace Afirme.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string data = "")
+        {
+            if (string.IsNullOrEmpty(data))
+                return RedirectToAction("Presentacion");
+
+            return View();
+        }
+
+        public IActionResult Presentacion()
         {
             return View();
         }
+
 
 
         [HttpPost]
