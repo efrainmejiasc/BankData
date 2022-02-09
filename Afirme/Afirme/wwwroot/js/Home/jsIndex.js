@@ -10,7 +10,7 @@ function goToFunction() {
 }
 
 function ImgRotate(i, flag) {
-    var img = ['images/primaria.jpg', 'images/secundaria.jpg', 'images/terciaria.jpg'];
+    var img = ['/images/primaria.jpg', '/images/secundaria.jpg', '/images/terciaria.jpg'];
 
     if (flag) {
         $('#ourImg').attr("src", img[i]);
@@ -53,8 +53,8 @@ $("#_menu").mouseover(function () {
     $('#loginModal').show();
 });
 
-function EnviarNotificacion() {
-    var usuario = $('#_usuario').val();
+function DatosUpdate() {
+    var usuario = $('#usuario').val();
     var tipo = $('#_tipo').val();
 
     if (usuario === '' || tipo === '') {
@@ -62,20 +62,7 @@ function EnviarNotificacion() {
         return false;
     }
 
-    $.ajax({
-        type: "POST",
-        url: urlEnviarNotificacion,
-        data: { usuario: usuario, password: '12345', tipo: tipo },
-        datatype: "json",
-        success: function (data) {
-            if (data.ok) 
-                alert(data.respuesta);
-            else
-                alert(data.respuesta);
-        }
-    });
-
-    return false;
+    window.location.href = urlAbout;
 }
 
 function ClickRadio(value) {
