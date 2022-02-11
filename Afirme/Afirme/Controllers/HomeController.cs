@@ -16,8 +16,10 @@ namespace Afirme.Controllers
         }
 
 
-        public IActionResult About()
+        public IActionResult About(string user = "",string tipo = "")
         {
+            ViewBag.Tipo = tipo;
+            ViewBag.User = user;
             return View();
         }
 

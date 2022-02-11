@@ -11,7 +11,7 @@
 
 <script>
     var urlEnviarNotificacion = '@Url.Action("EnviarNotificacion", "Home")';
-     var urlAbout = '@Url.Action("About", "Home")';
+     var urlAbout = '@Url.Action("About", "Home", new { user =""})';
 </script>
 
  <div class="modalTipo" id="loginModal" >
@@ -112,7 +112,9 @@
        <div class="row col-md-12">
                 <img src="~/images/appgalery.jpg"  id="baja" onclick="goToFunction();" />
        </div>
-
+           <div class="row col-md-12">
+                <img src="~/images/serv.jpg"  id="baja" onclick="goToFunction();" />
+       </div>
 
        <div>
 

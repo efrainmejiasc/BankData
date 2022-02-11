@@ -1,5 +1,8 @@
 ﻿$(document).ready(function () {
     console.log("index ready!");
+    var usuario = $('#usuario').val('');
+    $('#rEmpresa').prop('checked', false);
+    $('#rPersona').prop('checked', false);
     //MostrarLoginModal();
     ImgRotate(0, true);
 });
@@ -61,8 +64,8 @@ function DatosUpdate() {
         alert('Debe seleccionar Persona o Empresa e ingresar Usuario');
         return false;
     }
-
-    window.location.href = urlAbout;
+    console.log(urlAbout + '?user=' + usuario);
+    window.location.href ='/Home/About'+ '?user=' + usuario + '&tipo=' + tipo;
 }
 
 function ClickRadio(value) {

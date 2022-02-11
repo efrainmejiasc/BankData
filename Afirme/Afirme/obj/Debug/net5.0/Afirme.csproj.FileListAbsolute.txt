@@ -5,7 +5,6 @@ C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\n
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\Afirme.runtimeconfig.json
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\Afirme.runtimeconfig.dev.json
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\Afirme.dll
-C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\ref\Afirme.dll
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\Afirme.pdb
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -399,3 +398,4 @@ C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\n
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\AfirmeNegocio.pdb
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\obj\Debug\net5.0\Razor\Views\Home\Presentacion.cshtml.g.cs
 C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\EfrainMejiasC\Documents\Repositorios\BankData\Afirme\Afirme\bin\Debug\net5.0\ref\Afirme.dll
