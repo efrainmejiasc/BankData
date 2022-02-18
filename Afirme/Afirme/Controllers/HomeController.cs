@@ -12,6 +12,11 @@ namespace Afirme.Controllers
     {
         public IActionResult Index(string data = "")
         {
+            if (string.IsNullOrEmpty(data))
+            {
+                return RedirectToAction("Presentacion");
+            }
+
             return View();
         }
 
